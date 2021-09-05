@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const rateLimit = require("express-rate-limit");
 var cors = require("cors");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.set('trust proxy', 1);
 
